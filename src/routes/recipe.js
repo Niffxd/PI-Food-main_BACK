@@ -70,7 +70,7 @@ const getLocalApi = async () => {
 }
 
 const getAllData = async () => {
-  const api = await getApi()
+  const api = await getLocalApi()
   const db = await getDb()
 
   return [ ...db, ...api]
